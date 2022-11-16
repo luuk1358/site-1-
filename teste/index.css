@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    font-family: 'lato', sans-serif;   
+}
+
+body{
+    background: linear-gradient(rgba(17, 17, 17, 0), rgba(20, 20, 20, 4)),url(img/yeezy\ fundo\ 2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position: 0px;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.89);
+}
+
+.menu-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo{
+    width: 90px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: -500px;
+    
+}
+
+.menu-content .list-itens{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-right: -500px;
+}
+
+.menu-content .list-itens a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before{
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: rgba(119, 107, 1);
+    transition: all 1.8s ease;
+}
+
+.menu-content .list-itens a:hover:before{
+    width: 100%;
+}
+
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeiro-texto{
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.segundo-texto{
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgba(145, 77, 0, 0.89);
+    text-transform: uppercase;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.btns button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid rgba(145, 77, 0, 0.89);
+    color: aliceblue;
+    text-transform: uppercase;
+    background-color: transparent;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover{
+    color: rgb(145, 77, 0, 0.89
+    );
+    border: none;
+
+}
+
+.btns button:before{
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(119, 107, 1);
+    transition: 1s;
+    z-index: -1;
+}
+
+.btns button:hover:before{
+    width: 100%;
+}
+
+
+
